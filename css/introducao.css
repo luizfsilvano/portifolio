@@ -1,0 +1,72 @@
+.main {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 200px;
+    align-items: center;
+  }
+
+  .main img {
+    max-width: 140%;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  .main h2 {
+    font-size: 5rem;
+    line-height: 1.125;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .main p {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    color: #525252;
+  }
+
+  .main h2::before {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 100px;
+    background: url("../img/detalhe.svg") no-repeat center;
+    position: absolute;
+    top: -20px;
+    left: -60px;
+    z-index: -1;
+  }
+
+
+  @media (max-width: 1200px) {
+    .main h2 {
+      font-size: 2.8rem;
+    }
+  }
+  @media (max-width: 800px) {
+
+    .main h2 {
+      font-size: 3rem;
+    }
+    .main {
+      max-width: 500px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 20px;
+    }
+    .main img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+
+
+  }
