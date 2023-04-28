@@ -1,2 +1,2 @@
-# portifolio
-Portifólio pessoal sem muitas informações
+# Portifólio
+Em desenvolvimento.
